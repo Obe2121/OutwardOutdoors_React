@@ -6,7 +6,8 @@ import Shop from './pages/Shop';
 import Reservations from './pages/Reservations';
 import ContactUs from './pages/ContactUs';
 import './App.css';
-import Home from './pages/Home'; // Add this import for the Home component
+import Home from './pages/Home';
+import Footer from './pages/Footer' // Add this import for the Home component
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         {/* Add other routes as needed */}
       </Routes>
+      <Footer />
     </Router>
   );
 }

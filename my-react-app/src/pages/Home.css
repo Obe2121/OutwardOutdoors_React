@@ -1,11 +1,10 @@
 /* Home.css */
 .hero-section {
-    background-color: black; /* Black background */
     width: 100%;
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0; /* Add some vertical padding */
   }
   
   .hero-video-container {
@@ -15,14 +14,16 @@
     display: flex;
     justify-content: center; /* Center the video horizontally */
     align-items: center; /* Center the video vertically */
+    padding: 20px 0;
   }
   
   iframe {
     display: block; /* Remove default margin */
-    max-width: 560px; /* Maximum width of the video */
+    max-width: 100%; /* Maximum width of the video */
     width: 100%; /* Responsive width */
-    height: 315px; /* Adjust height as needed */
+    height: 500px; /* Adjust height as needed */
     z-index: 1;
+    border:none;
   }
   
   .hero-button {
@@ -37,5 +38,105 @@
     text-decoration: none; /* Remove underline */
     padding: 10px 20px;
     z-index: 2; /* Ensure button is above the video */
+  }
+
+  .meet-the-team-title {
+    color: #2a3439; /* Same as NavBar text color */
+    text-align: center; /* Center the title under the video */
+    padding-bottom: 10px; /* Space above the underline */
+    margin-top: 20px; /* Space below the underline for whatever comes next */
+    border-bottom: 2px solid #2a3439; /* A little line (underline) */
+  }
+
+  .team-photo {
+    width: 800px; /* Set width to 300px */
+    height: 500px; /* Set height to 300px */
+    display: block; /* Ensures the image is block-level for margin auto to work */
+    margin: 20px auto; /* Adds some space and centers the image horizontally */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+    object-fit: cover; /* Ensures the image covers the area, might crop if aspect ratio differs */
+  }
+  .Who-We-Are-Body{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+
+  }
+  .Home-Image-container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .Home-Image{
+    width: 400px;
+    height:250px;
+    object-fit: cover;
+  }
+
+  .left-home-title{
+    text-align: center;
+  }
+
+  .right-home-title{
+    text-align: center;
+  }
+
+  .left-image-body{
+    text-align: center;
+  }
+  .right-image-body{
+    text-align: center;
+  }
+
+  .Connect-With-Us-Container{
+    padding: 5px;
+    background-color: #2a3439;
+    text-align: center;
+    width: 100%;
+    color: white;
+  }
+
+  .x-image-button{
+    padding: 10px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .facebook-image-button{
+    padding: 10px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .youtube-image-button{
+    padding: 10px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .Partners-container {
+    text-align: center; /* Center the title and partner logos */
+  }
+  
+  .Partners-Title {
+    margin-bottom: 20px; /* Adds some space between the title and the logos */
+  }
+  
+  .partner-container {
+    display: flex; /* This enables flexbox layout */
+    justify-content: center; /* This centers the flex items (logos) horizontally in the container */
+    gap: 20px;
+    padding-bottom: 25px; /* This adds some space between each logo */
+  }
+  
+  /* If the images are of different sizes and you want to make them look uniform */
+  .TST-image-button, .JAS-image-button {
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Adjust based on your preference, could set a max-width */
+    max-height: 100px; /* Example fixed height, adjust as needed */
   }
   

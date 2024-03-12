@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Adjust the gap between links as needed */
+  }
+  
+  .left-links {
+    justify-content: flex-start;
+  }
+  
+  .right-links {
+    justify-content: flex-end;
+  }
+  
+  .logo-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    height: 50px; /* Adjust the logo size as needed */
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #2a3439; /* Gunmetal grey */
+    color: white; /* Adjust text color for better visibility, if needed */
+  }
+
+  .navbar a {
+    color: #ffffff; /* Keeps link color white */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px; /* Adds some padding around links for a better click area */
+    font-weight: bold; /* Makes font bold */
+  }
+  
+  .navbar a:hover {
+    color: #ffffff; /* Keeps link color white on hover */
+    text-decoration: underline; /* Optional: Adds underline on hover for visual feedback */
+  }
+
+  
+  
+  

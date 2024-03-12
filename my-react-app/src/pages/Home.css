@@ -1,0 +1,41 @@
+/* Home.css */
+.hero-section {
+    background-color: black; /* Black background */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Add some vertical padding */
+  }
+  
+  .hero-video-container {
+    position: relative;
+    width: 100%; /* Ensure it spans the width of the page */
+    background-color: black; /* Black background */
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+  }
+  
+  iframe {
+    display: block; /* Remove default margin */
+    max-width: 560px; /* Maximum width of the video */
+    width: 100%; /* Responsive width */
+    height: 315px; /* Adjust height as needed */
+    z-index: 1;
+  }
+  
+  .hero-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, +100px); /* Center button and move it down 15px */
+    background-color: black; /* Button background color */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    border: 5px solid black; /* 5px black border */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px;
+    z-index: 2; /* Ensure button is above the video */
+  }
+  
